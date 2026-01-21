@@ -1001,3 +1001,11 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+from notifier.email import send_email
+
+send_email(
+    subject="【测试】daily_stock_analysis 邮件功能验证",
+    content="如果你收到这封邮件，说明邮件配置完全正常。"
+)
+
